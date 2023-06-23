@@ -24,7 +24,7 @@ function Input() {
   };
 
   const dataInput = () => {
-    alert(`{name: ${name} price: ${price}}`);
+    alert(`{name: ${name} price: ${price.replaceAll(",", "")}}`);
     setName("");
     setPrice("");
   };
