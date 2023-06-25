@@ -65,7 +65,7 @@ const SmallButton = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 8px;
-  background-color: ${(props) => props.bgColor};
+  background-color: ${(props) => props.backColor};
   height: 40px;
   width: 100px;
 `;

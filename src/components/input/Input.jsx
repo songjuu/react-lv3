@@ -24,6 +24,10 @@ function Input() {
   };
 
   const dataInput = () => {
+    if (!name || !price) {
+      alert("이름과 가격을 다시 입력해주세요.");
+      return false;
+    }
     alert(`{name: ${name} price: ${price.replaceAll(",", "")}}`);
     setName("");
     setPrice("");
